@@ -163,6 +163,9 @@ const StyledSuccess = styled.div`
 
     >div:first-of-type{
         color: rgba(117, 116, 116, 1);
+        p{
+        font-weight: 600;
+        }
     }
 
     h2{
@@ -182,6 +185,8 @@ const StyledSuccess = styled.div`
     p{
         font-family: 'IBM Plex Sans';
     }
+
+    
 
     .stats{
         display: flex;
