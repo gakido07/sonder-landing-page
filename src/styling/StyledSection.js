@@ -19,6 +19,7 @@ const StyledSection = styled.div`
 
     p{
         font-family: 'IBM Plex Sans';
+        font-weight: 600;
     }
 
 

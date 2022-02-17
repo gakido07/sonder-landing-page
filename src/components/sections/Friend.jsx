@@ -73,6 +73,10 @@ const StyledFriend = styled(StyledSection)`
     background-color: rgba(211, 180, 78, 1);
     padding-top: 0em;
 
+    p{
+        color: rgba(250, 239, 203, 1);
+    }
+
     button{
         width: 35%;
     }

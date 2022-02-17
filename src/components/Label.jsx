@@ -27,6 +27,7 @@ const StyledLabel = styled.div`
         margin-bottom: 0.3em;
         margin-top: 0.5em;
         font-family: 'Lora';
+        white-space: nowrap;
     }
 
     button{

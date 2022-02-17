@@ -53,6 +53,10 @@ const StyledLanding = styled(StyledSection)`
         overflow: hidden;
     }
 
+    p{
+        color: rgba(237, 207, 207, 1);
+    }
+
     button{
         width: 35%;
     }

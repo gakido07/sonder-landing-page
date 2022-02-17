@@ -4,6 +4,8 @@ import styled from "styled-components";
 import Label from "../Label";
 import useTransition from "../../hooks/useTransition";
 import { motion } from "framer-motion";
+import { ReactComponent as SvgQuote } from '../../assets/Vector.svg'
+import { ReactComponent as SvgQuote1 } from '../../assets/Vector (1).svg'
 
 const variants = {
     visible: { opacity: 1, y: 0 },
@@ -131,6 +133,16 @@ const Success = () => {
                     </StyledImageContainer>
                 </div>
             </div>
+            <div className="quote">
+                <div>
+                    <div>
+            <SvgQuote />
+                    <p>Whatever souls are made of, his and I are the same</p>
+                    <SvgQuote1 />
+                    </div>  
+                    <p> —   Jules, 23</p>
+                </div>
+            </div>
         </StyledSuccess>
     )
 }
@@ -140,13 +152,17 @@ export default Success;
 const StyledSuccess = styled.div`
     padding-top: 3em;
     width: 100%;
-    height: 70em;
+    height: 79em;
     background-color:rgba(255, 239, 242, 1);
 
     >div{
         width: 60%;
         margin: auto;
         margin-bottom: 2em;
+    }
+
+    >div:first-of-type{
+        color: rgba(117, 116, 116, 1);
     }
 
     h2{
@@ -173,7 +189,7 @@ const StyledSuccess = styled.div`
     }
 
     .couples{
-        height: 20em;
+        height: 38em;
         width: 45%;
         display: flex;
         justify-content: space-between;
@@ -193,8 +209,43 @@ const StyledSuccess = styled.div`
         }
     }
 
+    .quote{
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+
+        div{
+            display: block;
+            text-align: right;
+
+            >p{
+                color: rgba(117, 116, 116, 1);
+            }
+
+            >div{
+                display: flex;
+                width: 100%;
+
+                svg{
+                    margin-top: 1.1em;
+                    margin-left: 1em;
+                    margin-right: 1em;
+                }
+
+                p{
+                    white-space: nowrap;
+                    color: rgba(221, 45, 74, 1);
+                    font-weight: 600;
+                    font-size: 20px;
+                    font-family: 'Lora';
+
+                }
+            }
+        }
+    }
+
     @media only screen and (max-width: 480px) {
-        height: 80em;
+        height: 88em;
 
         >div{
             width: 80%;
@@ -206,6 +257,17 @@ const StyledSuccess = styled.div`
 
         .couples{
             width: 95%;
+            height: 25em;
+        }
+
+        .quote{
+            width: 100%;
+            margin-top: 3em;
+        }
+
+
+        .quote div >div p{
+            white-space: normal;
         }
     }
 `;
