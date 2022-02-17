@@ -1,12 +1,11 @@
 import React from 'react';
-import styled from 'styled-components'
-import { AltStyledButton, StyledButton } from '../../styling/StyledButton';
-import StyledSection from '../../styling/StyledSection';
+import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-const Landing = () => {
+import { AltStyledButton, StyledButton } from '../../styling/StyledButton';
+import StyledSection from '../../styling/StyledSection';
 
-    
+const Landing = () => {    
 
     return (
         <StyledLanding>

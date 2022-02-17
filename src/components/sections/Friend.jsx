@@ -126,7 +126,6 @@ const StyledImageContainer = styled.div`
         }
     }
 
-
     .second{
         >div:nth-child(1){
             height: 15em;
