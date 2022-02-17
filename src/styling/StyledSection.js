@@ -41,7 +41,17 @@ const StyledSection = styled.div`
     }
 
     .content{
-        margin-bottom: 4em;
+        margin-bottom: 3em;
+    }
+
+
+    @media only screen and (max-width: 480px) {
+        display: block;
+        height: 65em;
+
+        >div:first-of-type{
+            height: 35em;
+        }
     }
 `
 

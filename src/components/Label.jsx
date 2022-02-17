@@ -8,7 +8,7 @@ const Label = ({ name }) => {
             <p>{ name }</p>
             <button>Read story</button>
         </StyledLabel>
-    )
+    );
 }
 
 export default Label;
@@ -26,14 +26,20 @@ const StyledLabel = styled.div`
         color: white;
         margin-bottom: 0.3em;
         margin-top: 0.5em;
+        font-family: 'Lora';
     }
 
     button{
         opacity: 1;
+        font-family: 'IBM Plex Sans';
         background: transparent;
         color: white;
         border-radius: 8px;
         border: 1px solid white;
         height: 2em;
+
+        :hover{
+            cursor: pointer;
+        }
     }
 `
