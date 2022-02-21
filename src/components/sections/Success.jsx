@@ -259,6 +259,10 @@ const StyledSuccess = styled.div`
         .stats{
             flex-wrap: wrap;
             justify-content: center;
+
+            span{
+                margin-right: 0.8em;
+            }
         } 
 
         .couples{
