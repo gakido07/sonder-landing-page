@@ -4,8 +4,8 @@ import styled from "styled-components";
 import Label from "../Label";
 import useTransition from "../../hooks/useTransition";
 import { motion } from "framer-motion";
-import { ReactComponent as SvgQuote } from '../../assets/Vector.svg'
-import { ReactComponent as SvgQuote1 } from '../../assets/Vector (1).svg'
+import { ReactComponent as SvgQuote } from '../../assets/Vector.svg';
+import { ReactComponent as SvgQuote1 } from '../../assets/Vector (1).svg';
 
 const variants = {
     visible: { opacity: 1, y: 0 },
@@ -15,7 +15,6 @@ const variants = {
 const Success = () => {
 
     const { ref, controls } = useTransition();
-    
 
     return (
         <StyledSuccess>
@@ -166,6 +165,7 @@ const StyledSuccess = styled.div`
         p{
         font-weight: 600;
         }
+        text-align: center;
     }
 
     h2{
@@ -258,6 +258,7 @@ const StyledSuccess = styled.div`
 
         .stats{
             flex-wrap: wrap;
+            justify-content: center;
         } 
 
         .couples{

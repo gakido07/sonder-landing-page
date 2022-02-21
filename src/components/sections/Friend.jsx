@@ -19,7 +19,7 @@ const Friend = () => {
     return (
     <StyledFriend>
         <div>
-                <motion.div
+            <motion.div
                 ref={ref}
                 animate={controls}
                 initial="hidden"
@@ -28,8 +28,8 @@ const Friend = () => {
                     <h1>
                     Soul mates come in the form of friendship too.   
                     </h1>
-                </motion.div>
-                <motion.div
+            </motion.div>
+            <motion.div
                 ref={ref}
                 animate={controls}
                 initial="hidden"
@@ -38,7 +38,7 @@ const Friend = () => {
                 <p>
                 We're not just about dating, we want to help you make meaningful connections as well. Whether you've just moved to a new city or looking to expand your social circle, with Sonder your next friend date is just 5 minutes away, and with any luck your next BFF!
                 </p>
-                </motion.div>
+            </motion.div>
                 <div className='btn-container'>
                     <StyledButton alt={true}>
                         Match me!
@@ -91,7 +91,7 @@ const StyledFriend = styled(StyledSection)`
         height: 80em;
 
         >div:first-of-type{
-            height: 40em;
+            height: 47em;
         }
 
         >div:last-of-type{
@@ -99,8 +99,6 @@ const StyledFriend = styled(StyledSection)`
             height: 40em;
         }
     }
-
-
 `
 
 
