@@ -64,6 +64,11 @@ const StyledLanding = styled(StyledSection)`
     @media only screen and (max-width: 480px) {
         >div:last-of-type{
             height: 25em;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
         }
     }
 
